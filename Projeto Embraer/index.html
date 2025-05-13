@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Maratona de Programação - Programando o Futuro - Ciência Diversa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+ 
+    <div class="logo-container">
+        <img src="cesar.png" class="logo">
+        <img src="Embraer.png" class="logo-embraer">
+    </div>
+    <h1>Maratona de Programação </h1>
+    <h2>Programando o Futuro - Ciência Diversa</h2>
+    <div class="container">
+        <div class="section">
+            <h2>Ranking</h2>
+            <table id="rankingTable">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Nome do Grupo</th>
+                        <th>Questões Corretas</th>
+                        <th>Balões</th>
+                    </tr>
+                </thead>
+                <tbody id="rankingBody">
+                    <tr>
+                        <td>1</td>
+                        <td contenteditable="true">Grupo 1</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td contenteditable="true">Grupo 2</td>
+                        <td><input type="number" value="0" min="0"  onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td contenteditable="true">Grupo 3</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td contenteditable="true">Grupo 4</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td contenteditable="true">Grupo 5</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td contenteditable="true">Grupo 6</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td contenteditable="true">Grupo 7</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td contenteditable="true">Grupo 8</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td contenteditable="true">Grupo 9</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td contenteditable="true">Grupo 10</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td contenteditable="true">Grupo 11</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td contenteditable="true">Grupo 12</td>
+                        <td><input type="number" value="0" min="0" onchange="updateRanking()"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            
+
+            <h2>Cronômetro</h2>
+            <label>Hora: <input type="number" id="h" min="0" max="23" value="0"></label>
+            <label>Minuto: <input type="number" id="m" min="0" max="59" value="1"></label>
+            <button onclick="iniciarCronometro()">Iniciar</button>
+
+            <h3 id="display">00:00:00</h3>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Desenvolvido por Taty Calixto</p>
+      </footer>
+</body>
+
+</html>
